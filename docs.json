@@ -22,8 +22,8 @@
                 "group": "Editing",
                   "icon": "pencil",
                   "pages": [
-                    "installation",
-                    "editor"
+                    "api-reference/endpoint/delete",
+                    "essentials/navigation"
                   ]
                 }
             ]
