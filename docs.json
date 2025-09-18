@@ -16,16 +16,15 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
               "development",
               {
                 "group": "Editing",
-                  "icon": "pencil",
-                  "pages": [
-                    "api-reference/endpoint/delete",
-                    "essentials/navigation"
-                  ]
-                }
+                "icon": "pencil",
+                "pages": [
+                  "api-reference/endpoint/delete",
+                  "essentials/navigation"
+                ]
+              }
             ]
           },
           {
