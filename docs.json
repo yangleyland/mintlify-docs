@@ -22,16 +22,9 @@
                 "group": "Editing",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "essentials/navigation"
+                  "api-reference/endpoint/delete"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/navigation"
             ]
           },
           {
