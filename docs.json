@@ -20,24 +20,21 @@
                 "group": "Editing",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "index"
+                  "api-reference/endpoint/delete"
                 ]
               },
               {
                 "group": "Editing",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "index"
+                  "api-reference/endpoint/delete"
                 ]
               },
               {
                 "group": "Editing",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "index"
+                  "api-reference/endpoint/delete"
                 ]
               }
             ]
