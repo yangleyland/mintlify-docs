@@ -16,13 +16,28 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "development",
               {
                 "group": "Editing",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete"
+                  "api-reference/endpoint/delete",
+                  "index"
+                ]
+              },
+              {
+                "group": "Editing",
+                "icon": "pencil",
+                "pages": [
+                  "api-reference/endpoint/delete",
+                  "index"
+                ]
+              },
+              {
+                "group": "Editing",
+                "icon": "pencil",
+                "pages": [
+                  "api-reference/endpoint/delete",
+                  "index"
                 ]
               }
             ]
