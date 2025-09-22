@@ -20,24 +20,21 @@
                 "group": "aaaa",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "ai-tools/testfile"
+                  "api-reference/endpoint/delete"
                 ]
               },
               {
                 "group": "dddd",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "ai-tools/testfile"
+                  "api-reference/endpoint/delete"
                 ]
               },
               {
                 "group": "ffff",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "ai-tools/testfile"
+                  "api-reference/endpoint/delete"
                 ]
               }
             ]
