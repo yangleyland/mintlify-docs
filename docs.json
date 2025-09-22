@@ -20,7 +20,8 @@
                 "group": "Editing",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete"
+                  "api-reference/endpoint/delete",
+                  "ai-tools/asdf.mdx"
                 ]
               },
               {
