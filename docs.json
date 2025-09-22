@@ -18,6 +18,7 @@
             "pages": [
               "development",
               "index",
+              "testfile",
               {
                 "group": "Editing",
                 "icon": "pencil",
