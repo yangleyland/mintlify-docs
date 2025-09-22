@@ -17,24 +17,27 @@
             "group": "Getting started",
             "pages": [
               {
-                "group": "Editing",
+                "group": "aaaa",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete"
+                  "api-reference/endpoint/delete",
+                  "ai-tools/testfile"
                 ]
               },
               {
-                "group": "Editing",
+                "group": "dddd",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete"
+                  "api-reference/endpoint/delete",
+                  "ai-tools/testfile"
                 ]
               },
               {
-                "group": "Editing",
+                "group": "ffff",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete"
+                  "api-reference/endpoint/delete",
+                  "ai-tools/testfile"
                 ]
               }
             ]
