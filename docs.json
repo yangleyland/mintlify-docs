@@ -20,8 +20,7 @@
                 "group": "aaaa",
                 "icon": "pencil",
                 "pages": [
-                  "api-reference/endpoint/delete",
-                  "devel"
+                  "api-reference/endpoint/delete"
                 ]
               },
               {
