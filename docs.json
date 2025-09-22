@@ -21,7 +21,7 @@
                 "icon": "pencil",
                 "pages": [
                   "api-reference/endpoint/delete",
-                  "dev.mdx"
+                  "dev"
                 ]
               },
               {
