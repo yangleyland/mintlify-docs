@@ -16,6 +16,7 @@
           {
             "group": "Getting started",
             "pages": [
+              "quickstart",
               {
                 "group": "aaaa",
                 "icon": "pencil",
