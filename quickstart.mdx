@@ -1,0 +1,72 @@
+---
+title: "Quickstart"
+description: "Get started with your documentation in minutes"
+---
+
+Get your documentation site up and running quickly with this step-by-step guide.
+
+## Prerequisites
+
+- GitHub account
+- Basic familiarity with Markdown
+
+## Setup your documentation
+
+<Steps>
+  <Step title="Create your repository">
+    Start by creating a new repository or using an existing one for your documentation.
+  </Step>
+
+  <Step title="Configure your subdomain">
+    Set up your custom subdomain in your Mintlify dashboard:
+    
+    ```
+    subdomain=johnscoolcompany
+    ```
+    
+    Your documentation will be available at `johnscoolcompany.mintlify.app`
+  </Step>
+
+  <Step title="Add your first page">
+    Create an MDX file with frontmatter:
+    
+    ```mdx
+    ---
+    title: "Welcome"
+    description: "Welcome to our documentation"
+    ---
+    
+    # Welcome to our docs
+    
+    This is your first documentation page.
+    ```
+  </Step>
+
+  <Step title="Configure navigation">
+    Update your `docs.json` file to include your new page:
+    
+    ```json
+    {
+      "navigation": {
+        "pages": ["welcome"]
+      }
+    }
+    ```
+  </Step>
+</Steps>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Writing content" icon="pen-to-square" href="/essentials/markdown">
+    Learn how to write effective documentation with Markdown and MDX
+  </Card>
+  
+  <Card title="AI tools" icon="robot" href="/ai-tools/claude-code">
+    Set up AI assistants to help with your documentation workflow
+  </Card>
+</CardGroup>
+
+<Note>
+Your documentation will automatically deploy when you push changes to your repository.
+</Note>
