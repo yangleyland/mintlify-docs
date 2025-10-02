@@ -1,0 +1,146 @@
+---
+title: "Quickstart"
+description: "Get your Mintlify documentation site up and running in minutes"
+---
+
+Get your documentation site live in under 5 minutes. This guide walks you through creating your first Mintlify documentation project from setup to deployment.
+
+## Prerequisites
+
+- Node.js 18 or higher
+- Git installed on your machine
+- GitHub account (for deployment)
+
+## Install Mintlify
+
+Install the Mintlify CLI globally:
+
+```bash
+npm install -g mintlify
+```
+
+Verify the installation:
+
+```bash
+mintlify --version
+```
+
+## Create your documentation
+
+Initialize a new documentation project:
+
+```bash
+mintlify init my-docs
+cd my-docs
+```
+
+This creates a new directory with:
+- `docs.json` - Configuration and navigation
+- `introduction.mdx` - Your first page
+- `mint.json` - Theme and styling settings
+
+## Start the development server
+
+Launch the local development server:
+
+```bash
+mintlify dev
+```
+
+Your documentation site opens at `http://localhost:3000`. The server automatically reloads when you make changes.
+
+## Add your first page
+
+Create a new page in your project directory:
+
+```bash
+touch getting-started.mdx
+```
+
+Add content to `getting-started.mdx`:
+
+```mdx
+---
+title: "Getting started"
+description: "Learn the basics of using our platform"
+---
+
+# Getting started
+
+Welcome to our platform! This guide covers the essential steps to get you up and running.
+
+## What you'll learn
+
+- How to create your first project
+- Basic configuration options
+- Next steps for advanced features
+
+## Create your first project
+
+Follow these steps to create your first project:
+
+1. Click the "New Project" button
+2. Enter your project name
+3. Select your preferred template
+4. Click "Create"
+
+<Note>
+Projects are automatically saved to your account.
+</Note>
+
+## Next steps
+
+Now that you have your first project:
+
+- Explore the [configuration options](/configuration)
+- Learn about [advanced features](/advanced)
+- Join our [community](/community) for support
+```
+
+## Update navigation
+
+Add your new page to the navigation in `docs.json`:
+
+```json
+{
+  "navigation": [
+    "introduction",
+    "getting-started"
+  ]
+}
+```
+
+Your new page appears in the sidebar automatically.
+
+## Deploy your site
+
+Deploy to Mintlify's hosting platform:
+
+1. Push your code to GitHub
+2. Connect your repository at [mintlify.com](https://mintlify.com)
+3. Your site deploys automatically on every push
+
+Your documentation is now live and accessible to your users.
+
+## What's next
+
+<CardGroup cols={2}>
+  <Card title="Writing content" icon="pen" href="/essentials/markdown">
+    Learn Mintlify's MDX format and components
+  </Card>
+  <Card title="Configuration" icon="gear" href="/configuration">
+    Customize your site's appearance and behavior
+  </Card>
+  <Card title="API documentation" icon="code" href="/api-reference/introduction">
+    Auto-generate docs from OpenAPI specs
+  </Card>
+  <Card title="AI tools" icon="robot" href="/ai-tools/claude-code">
+    Use AI assistants to write better docs
+  </Card>
+</CardGroup>
+
+## Need help?
+
+- Check our [community forum](https://mintlify.com/community) for answers
+- Browse the [full documentation](https://mintlify.com/docs)
+- Contact support for technical issues
