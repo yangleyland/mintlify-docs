@@ -16,28 +16,7 @@
           {
             "group": "Getting started",
             "pages": [
-              {
-                "group": "aaaa",
-                "icon": "pencil",
-                "pages": [
-                  "api-reference/endpoint/delete",
-                  "dev"
-                ]
-              },
-              {
-                "group": "dddd",
-                "icon": "pencil",
-                "pages": [
-                  "api-reference/endpoint/delete"
-                ]
-              },
-              {
-                "group": "ffff",
-                "icon": "pencil",
-                "pages": [
-                  "api-reference/endpoint/delete"
-                ]
-              }
+              "quickstart"
             ]
           },
           {
