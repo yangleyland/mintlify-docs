@@ -3,44 +3,40 @@ title: Changelog
 rss: true
 ---
 
-<Update label="October 31" tags={["Improvements"]} rss={{ title: "Weekly Updates", description: "API playground enhancements, table improvements, performance optimizations, and bug fixes" }}>
+<Update label="August 24 - August 30" tags={["Improvements"]} rss={{ title: "Weekly Updates", description: "Enhanced feedback collection, navigation improvements, and authentication bug fixes" }}>
 
-## Assistant improvements
+## Major release: Enhanced feedback collection
 
-- **Starter questions for assistant are here! You can add your own within the dashboard at [Assistant --> Settings](https://dashboard.mintlify.com/mintlify/mintlify/products/assistant/settings)**
-- Assistant insights quality has been improved with default spam protection for abusive keywords and JSON queries.
+- **Major improvement**: Readers can now give more detailed feedback after selecting _thumbs up/down_, including options and written comments. You can also collect feedback on code blocks and view all responses in your dashboard analytics.\
+  _Note: Contact us to enable this feature for your site._
 
-## API playground improvements
+## Navigation and quality of life improvements
 
-- The API playground now automatically fills in default values for parameters, which saves time when testing endpoints.
-- Issues with `allOf`, `oneOf`, and nested object schemas that previously caused rendering problems or incorrect field displays have been fixed, and complex API schemas now render correctly with all fields visible and properly structured.
-- Enum and nullable field types now display accurate labels in the playground, which makes it clearer what values are accepted and whether fields are optional.
-- When working with nested objects in API requests, the playground now shows proper descriptive labels for each field instead of generic placeholders, which makes it easier to understand what data to provide.
-- Enum const tables and API field displays now render with improved formatting and alignment, which makes it easier to scan available options and understand field requirements.
-- API playground modals now display rich MDX-formatted descriptions at the top, which gives better context for endpoints with formatted text, links, and code examples.
+- Quality of life improvement to ignore trailing slashes and double slashes so you don't have to worry about getting them exactly right in your docs.json
+- You can now add a `noAnchor` attribute to your `h1-6` HTML tags to avoid them having an anchor link
+- The Palm theme now has a floating language selector in the bottom left similar to Stripe's approach
+- Added a new field to the docs.json called [`drilldown`](https://mintlify.com/docs/navigation#enable-auto-navigation-for-groups) which allows you to control whether or not users are navigated to the first page in a navigation group when the group is expanded
+- Quality of life improvement to make nested ordered lists alternate styles from decimal/Roman to alpha
 
-## Analytics changes
+## Bug fixes and reliability
 
-- Deferred analytics loading: PostHog and LogRocket now load after documentation content, which improves initial page load times and Core Web Vitals scores without affecting analytics data.
-- Conditional session recording: PostHog session recording can now be enabled conditionally based on user properties or page context for more control over when recordings happen.
+- Fixed a bug where scroll position anchor links weren't working correctly when there were JS components on a page
+- Fixed a bug where Google was indexing raw `*.md` files because they were missing a `x-robots-tag noindex` header
+- Fixed a bug with OAuth on protected docs where it wouldn't redirect you back to your starting page once you completed the flow successfully
+- Fixed a bug on previews of auth protected docs where you weren't able to see the entire navigation bar
+- Bug fixes to how SVGs are handled with our new image CDN
 
-## Visual improvements
+## Component and styling enhancements
 
-- Tables now have better alignment, consistent spacing, and enhanced readability. Headers align properly with their content columns.
+- Added a new CSS selector for custom styles on `SidebarNavGroupDivider`
+- New regression tests for MDX defined API pages that have security defined on them will ensure a greater degree of stability
 
-## Bug fixes
+## Performance improvements
 
-- Fixed link overflow issues that caused horizontal scrolling on mobile devices. Links now wrap properly within their containers.
-- Improved LaTeX/math block styling for better readability and consistent formatting.
-- Added `playsInline` and autoplay props to video embeds so they work correctly on iOS devices.
-- Updated Claude icon with proper border-radius for visual consistency.
-- Fixed `/llms.txt` routing so LLM agents can properly access documentation.
-- Prevented infinite schema expansion in complex OpenAPI specs that could cause browser crashes.
-- Removed x-overflow in Palm theme that was cutting off text in the API playground.
-- Increased content font-size to improve compatibility with browser reader modes.
-- Fixed Google login button styling for better visual consistency.
+- Performance improvement by moving the KaTeX CSS from cdnjs to our own CDN on Cloudfront for reduced latency
 
-</Update>
+  </Update>
+
 <Update label="2025-11-27" description="Box AI API — new AI models available and default models update" tags={["New features", "Impactful changes", "API", "AI"]}>
   The list of [available AI models][supported-models] has been recently updated with the following models:
 
@@ -67,6 +63,7 @@ For further details on Box AI API, see the [guides][ai-guides] and [API referenc
 
 Should you have any issues or need further guidance, please post a request to our [developer forum][forum] for any help needed.
 
+[supported-models]: https://developer.box.com/guides/box-ai/supported-models/
 [override]: https://developer.box.com/guides/box-ai/ai-agents/ai-agent-overrides/
 [ai-guides]: https://developer.box.com/guides/box-ai
 [api]: https://developer.box.com/reference/post-ai-ask/
@@ -78,32 +75,5 @@ Should you have any issues or need further guidance, please post a request to ou
 [llama-4-maverick]: https://developer.box.com/guides/box-ai/ai-models/ibm-llama-4-maverick-model-card/
 [gemini-2-5-pro]: https://developer.box.com/guides/box-ai/ai-models/google-gemini-2-5-pro-model-card/
 [gemini-2-5-flash]: https://developer.box.com/guides/box-ai/ai-models/google-gemini-2-5-flash-model-card/
-
-</Update>
-<Update label="2025-11-27" description="Box AI API — new AI models available and default models update" tags={["New features", "Impactful changes", "API", "AI"]}>
-  The list of [available AI models][supported-models] has been recently updated with the following models:
-
-- [OpenAI GPT-5.1][gpt-5-1]
-- [OpenAI GPT-5 mini][gpt-5-mini]
-- [Gemini 3 Pro][gemini-3-pro]
-- [Llama 4 Maverick][llama-4-maverick]
-
-{/*more*/}
-
-Additionally, default AI models have been updated for Box AI features:
-
-- [Gemini 2.5 Pro][gemini-2-5-pro] is now the default model for Box AI Enhanced Extract.
-- [Gemini 2.5 Flash][gemini-2-5-flash] is now the default model for Box AI Standard Extract.
-- [OpenAI GPT-5][gpt-5] is now the default model for Box AI Advanced Agent for Hubs, Documents, and Notes Q&A.
-- [OpenAI GPT-5 mini][gpt-5-mini] is now the default model for Box AI for Hubs, Documents, and Notes Q&A.
-
-**Note:** Models offered in **Preview** mode have not been fully performance-tested at scale and are provided on an as-is basis. You may experience variability in model/output quality, availability, and accuracy.
-
-You can use the provided models to [override the default model][override] used in the AI agent configuration.
-For further details on Box AI API, see the [guides][ai-guides] and [API reference][api].
-
-## Where to get support
-
-Should you have any issues or need further guidance, please post a request to our [developer forum][forum] for any help needed.
 
 </Update>
